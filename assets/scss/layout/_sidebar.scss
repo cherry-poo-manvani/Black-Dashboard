@@ -1,0 +1,45 @@
+.brandlogo {
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.sidebar {
+    width: $navbar-width;
+    height: 100%;
+    border-right: 2px solid $light;
+}
+
+.list-group-item {
+    border: none;
+    background-color: transparent;
+    font-size: $list-font-size;
+    &:hover {
+        border-left: 4px solid $accent;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+//Profile
+.profile {
+    width: $profile-width;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.profile-wrapper {
+    padding: $profile-image-padding;
+}
+
+figure {
+    margin: 0;
+}
