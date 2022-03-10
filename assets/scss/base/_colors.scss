@@ -1,15 +1,23 @@
 // Theme Primary Color
 $primary: #04471c;
 // Mainly use for UI controls like Buttons
-$secondary: #fbde4a;
+// $secondary: #fbde4a;
 // Used for Footer Section
 $accent: #021a28;
 // Mainly use for Normal Text color
-$gray: #989d9e;
+$gray-600: #ced4da;
 // Additional Shades of gray color
 $light: #f0e6e5;
 $extra-light: #fcfcfc;
+// black
+$dark: #000000;
 // body
-$body-color: #04471c;
+$body-color: $dark;
 // Dedicated for button text only
-$btn-text-primary: $primary;
+$btn-text-primary: $accent;
+// colors for cards
+$dashboard-view-card: #f9f8f3;
+$sale-card: #ffefe2;
+$profit-card: #eefcef;
+$orders-card: #e6f5fa;
+$vists-card: #f4f5f9;

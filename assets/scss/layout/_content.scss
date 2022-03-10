@@ -1,11 +1,9 @@
 // Main
 // Search-bar
 #searchInput {
-     ::placeholder {
-        font-size: 10px;
+    outline: none;
+    font-size: $input-font-size;
+    .search-icon-size {
+        font-size: larger;
     }
-}
-
-.search-icon-size {
-    font-size: larger;
 }
