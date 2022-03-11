@@ -1,7 +1,12 @@
 // Button styles goes here
 .btn {
+    color: $gray;
+    font-size: $Btn-font-size;
     width: 140px;
     height: 45px;
     border-radius: $input-border-radius;
     border: 2px solid $gray-600;
+    .icon-filter {
+        color: $dark;
+    }
 }

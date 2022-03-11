@@ -2,3 +2,13 @@
 .view-cards {
     background-color: $dashboard-view-card;
 }
+
+.rounded-card {
+    border-radius: $card-border-radius;
+}
+
+.card-icon-box-size {
+    background-color: rgba(168, 165, 165, 0.315);
+    height: 65px;
+    width: 65px;
+}

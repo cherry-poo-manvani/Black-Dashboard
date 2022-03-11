@@ -79,35 +79,36 @@
         <!-- sidebar section ends -->
 
         <!-- Main section starts -->
-        <main class="d-flex flex-grow-1 p-lg-4 ">
+        <main class="d-flex flex-column flex-grow-1 p-lg-4 ">
             <!--search-box -->
-            <div class=" ">
-                <div class="form-control">
-                    <label for="searchInput" class="icon border-0 "><span class="search-icon-size icon-search"></span></label>
-                    <input type="search" class="border-0 p-md-1" id="searchInput" placeholder="Search for Stats">
+            <div class="">
+                <div class="form-control w-50">
+                    <label for="searchInput" class="icon border-0 "><span class="icon-search"></span></label>
+                    <input type="search" class="border-0 p-md-1 text-gray" id="searchInput" placeholder="Search for Stats">
                 </div>
             </div>
             <!-- Greeting block -->
             <div class="d-flex justify-content-between align-content-center pt-5">
                 <div class="d-flex flex-column ">
-                    <h3>Hello pooja</h3>
-                    <span>Welcome back!</span>
+                    <h3>Hello Sia</h3>
+                    <span class="text-gray">Welcome back!</span>
                 </div>
                 <!-- Filter-Button -->
                 <div class="d-flex justify-content-end pt-3">
-                    <button type="button" class="btn form-control"><i class=" icon-filter"></i>Filter</button>
+                    <button type="button" class="btn form-control">Filter <i class="ps-2 icon-filter"></i></button>
                 </div>
             </div>
             <!-- Dashboard view cards section -->
-            <div class="wrapper d-flex">
-                <div class="rounded border-0 view-cards">
-                    <div class="col-4 d-flex flex-column">
-                        <div>
-                            icon
+            <div class="d-flex pt-4">
+                <div class="rounded-card p-4 border-0 view-cards">
+                    <div class="col-4 d-flex align-content-center flex-column">
+                        <div class="rounded-circle card-icon-box-size ">
+                            <span class="d-flex justify-content-center">icon</span>
                         </div>
-                        <div>
-                            <span>view</span> count
-                            <span>title</span>
+                        <div class="d-flex flex-column">
+                            <span class="text-gray">view</span>
+                            <h3 class="text-dark">count</h3>
+                            <span class="text-gray">title</span>
                         </div>
                     </div>
                 </div>

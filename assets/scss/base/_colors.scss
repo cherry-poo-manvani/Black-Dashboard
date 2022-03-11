@@ -6,6 +6,7 @@ $primary: #04471c;
 $accent: #021a28;
 // Mainly use for Normal Text color
 $gray-600: #ced4da;
+$gray: #adadad;
 // Additional Shades of gray color
 $light: #f0e6e5;
 $extra-light: #fcfcfc;
@@ -13,11 +14,24 @@ $extra-light: #fcfcfc;
 $dark: #000000;
 // body
 $body-color: $dark;
-// Dedicated for button text only
-$btn-text-primary: $accent;
 // colors for cards
 $dashboard-view-card: #f9f8f3;
 $sale-card: #ffefe2;
 $profit-card: #eefcef;
 $orders-card: #e6f5fa;
 $vists-card: #f4f5f9;
+//Map color theme
+$theme-colors: ( "primary": $primary, "gray": $gray, "light": $light, "accent": $accent, "extra-light": $extra-light, "gray-600": $gray-600);
+@each $key,
+$val in $theme-colors {
+    .text-#{$key} {
+        color: $val;
+    }
+}
+
+@each $key,
+$val in $theme-colors {
+    .icon-#{$key} {
+        color: $val;
+    }
+}

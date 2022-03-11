@@ -1,9 +1,10 @@
 // Main
 // Search-bar
+.icon-search {
+    font-size: $font-size-base;
+}
+
 #searchInput {
     outline: none;
-    font-size: $input-font-size;
-    .search-icon-size {
-        font-size: larger;
-    }
+    // font-size: $input-font-size;
 }
