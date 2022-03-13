@@ -1,27 +1,41 @@
 // Theme Primary Color
-$primary: #04471c;
+$primary:  #000000;
 // Mainly use for UI controls like Buttons
 // $secondary: #fbde4a;
 // Used for Footer Section
 $accent: #021a28;
 // Mainly use for Normal Text color
-$gray-600: #ced4da;
+$gray-600: #909294;
 $gray: #adadad;
 // Additional Shades of gray color
 $light: #f0e6e5;
 $extra-light: #fcfcfc;
+$green: #def3e0;
+$skin: #f0e2d2;
+$purple: #e5e8f7;
 // black
 $dark: #000000;
 // body
 $body-color: $dark;
 // colors for cards
-$dashboard-view-card: #f9f8f3;
-$sale-card: #ffefe2;
-$profit-card: #eefcef;
-$orders-card: #e6f5fa;
-$vists-card: #f4f5f9;
+$dashboard-view-card: #f3eed6;
+$sale-card: #f5e4d6;
+$profit-card: #d2f5d5;
+$orders: #daeef5;
+$vists-card: #d9dff7;
 //Map color theme
-$theme-colors: ( "primary": $primary, "gray": $gray, "light": $light, "accent": $accent, "extra-light": $extra-light, "gray-600": $gray-600);
+$theme-colors: ( "primary": $primary, 
+"gray": $gray, 
+"light": $light,
+"accent": $accent,
+"extra-light": $extra-light,
+"green": $green,
+"skin": $skin,
+"orders": $orders,
+"purple,": $purple, 
+"gray-600": $gray-600);
+
+
 @each $key,
 $val in $theme-colors {
     .text-#{$key} {
@@ -29,9 +43,14 @@ $val in $theme-colors {
     }
 }
 
-@each $key,
-$val in $theme-colors {
-    .icon-#{$key} {
-        color: $val;
-    }
-}
+@each $key, $val in $theme-colors {
+  .card-#{$key} {
+    background-color: $val;
+  }
+}  
+
+@each $key, $val in $theme-colors {
+  .icon-#{$key} {
+    color: $val;
+  }
+}  

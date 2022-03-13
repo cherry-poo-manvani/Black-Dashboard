@@ -13,7 +13,14 @@
 <body>
     <div class="wrapper d-flex h-100 w-100 overflow-hidden">
         <!-- sidebar section starts -->
-        <aside class="sidebar flex-shrink-0 d-flex flex-column">
+        <input type="checkbox" id="aside-checkbox" class="d-none">
+        <aside class="d-flex flex-column aside position-relative py-5 sidebar flex-shrink-0">
+            <div class="aside-toggle position-absolute">
+                <label for="aside-checkbox">
+                    <span class="icon icon-sign-out"></span>
+                </label>
+            </div>
+
             <!-- Brand-logo -->
             <div class="brandlogo d-flex align-items-center justify-content-center">
                 <span class="icon icon-dashboard"></span>
@@ -81,12 +88,10 @@
         <!-- Main section starts -->
         <main class="d-flex flex-column flex-grow-1 p-lg-4 ">
             <!--search-box -->
-            <div class="">
                 <div class="form-control w-50">
                     <label for="searchInput" class="icon border-0 "><span class="icon-search"></span></label>
                     <input type="search" class="border-0 p-md-1 text-gray" id="searchInput" placeholder="Search for Stats">
                 </div>
-            </div>
             <!-- Greeting block -->
             <div class="d-flex justify-content-between align-content-center pt-5">
                 <div class="d-flex flex-column ">
@@ -98,22 +103,192 @@
                     <button type="button" class="btn form-control">Filter <i class="ps-2 icon-filter"></i></button>
                 </div>
             </div>
-            <!-- Dashboard view cards section -->
-            <div class="d-flex pt-4">
-                <div class="rounded-card p-4 border-0 view-cards">
-                    <div class="col-4 d-flex align-content-center flex-column">
+            <!-- Dashboard view cards section starts-->
+            <div class="pt-4">
+                <div class="d-flex rounded-card p-2 justify-content-between border-0 view-cards">
+                    <!-- Card one -->
+                    <div class="d-flex flex-column justify-content-center align-content-center p-2">
                         <div class="rounded-circle card-icon-box-size ">
-                            <span class="d-flex justify-content-center">icon</span>
+                            <span class="card-icon d-flex align-items-center justify-content-center"><i class="icon-eye"></i></span>
                         </div>
-                        <div class="d-flex flex-column">
+                        <div class="d-flex pt-2 p-2 flex-column align-content-center">
                             <span class="text-gray">view</span>
-                            <h3 class="text-dark">count</h3>
-                            <span class="text-gray">title</span>
+                            <h1 class="text-dark">500</h1>
+                            <span class="text-gray">Per Day</span>
+                        </div>
+                    </div>
+                    <!-- Card two -->
+                    <div class="d-flex flex-column justify-content-center align-content-center p-2">
+                        <div class="rounded-circle card-icon-box-size ">
+                            <span class="card-icon d-flex align-items-center justify-content-center"><i class="icon-compass"></i></span>
+                        </div>
+                        <div class="d-flex pt-2 p-2 flex-column align-content-center">
+                            <span class="text-gray">visits</span>
+                            <h1 class="text-dark">2000</h1>
+                            <span class="text-gray">Per Minutes</span>
+                        </div>
+                    </div>
+                    <!-- Card three -->
+                    <div class="d-flex flex-column justify-content-center align-content-center p-2">
+                        <div class="rounded-circle card-icon-box-size ">
+                            <span class="card-icon d-flex align-items-center justify-content-center"><i class="icon-house"></i></span>
+                        </div>
+                        <div class="d-flex pt-2 p-2 flex-column align-content-center">
+                            <span class="text-gray">Orders</span>
+                            <h1 class="text-dark">1500</h1>
+                            <span class="text-gray">Per Day</span>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
+            <!-- Dashboard view cards section ends -->
+            <!-- Cards sections starts -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 my-3">
+                    <div class="card">
+                        <div class="card-body p-4 d-flex justify-content-between card-skin">
+                            <div>
+                                <h5 class="progress-text">Sales</h5>
+                                <h6 class="text-muted card-text ">Total Sales today</h6>
+                                <h3 class="progress-text">$500</h3>
+                            </div>
+                            <div class="pie-65 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="inner-circle d-flex justify-content-center align-items-center card-skin">
+                                    <h4>65%</h4>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="icon-arrow-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 my-3">
+                    <div class="card">
+                        <div class="card-body p-4 d-flex justify-content-between card-green">
+                            <div>
+                                <h5 class="progress-text">Profit</h5>
+                                <h6 class="text-muted card-text">Per Day Ratio</h6>
+                                <h3 class="progress-text">$150</h3>
+                            </div>
+                            <div class="pie-40 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="inner-circle d-flex justify-content-center align-items-center card-green">
+                                    <h4>40%</h4>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="icon-arrow-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 my-3">
+                    <div class="card">
+                        <div class="card-body p-4 d-flex justify-content-between card-orders">
+                            <div>
+                                <h5 class="progress-text">Orders</h5>
+                                <h6 class="text-muted card-text">Total Orders Today</h6>
+                                <h3 class="progress-text">1000</h3>
+                            </div>
+                            <div class="pie-25 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="inner-circle d-flex justify-content-center align-items-center card-orders">
+                                    <h4>25%</h4>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="icon-danger icon-arrow-up"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12  my-3">
+                    <div class="card">
+                        <div class="card-body p-4 d-flex justify-content-between card-purple">
+                            <div>
+                                <h5 class="progress-text">Visits</h5>
+                                <h6 class="text-muted card-text">Total Visits today</h6>
+                                <h3 class="progress-text">400</h3>
+                            </div>
+                            <div class="pie-87 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="inner-circle d-flex justify-content-center align-items-center card-purple">
+                                    <h4>87%</h4>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="icon-danger icon-arrow-up"></span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Cards sections ends -->
+        <div class="col-lg-4 mt-sm-3 mt-md-3">
+            <div class="row justify-content-md-center justify-content-lg-end">
+                <div class="col-lg-12 col-md-8 ps-lg-5 ps-md-0">
+                    <div class="sales-wrapper p-3">
+                        <h4 class="p-3 d-flex justify-content-center">Sales Revenue</h4>
+                        <!-- revenue-card:start -->
+                        <div class="row revenue-card">
+                            <div class="col-12 px-5 d-flex">
+                                <div
+                                    class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
+                                    <span class="icon-shop-window"></span>
+                                </div>
+                                <div class="details px-5 ">
+                                    <h4>230k</h4>
+                                    <p class="text-muted">Sales</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 px-5 d-flex">
+                                <div
+                                    class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
+                                    <span class="icon-customer"></span>
+                                </div>
+                                <div class="details px-5">
+                                    <h4>8.549K</h4>
+                                    <p class="text-muted">Customers</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 px-5 d-flex">
+                                <div
+                                    class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
+                                    <span class="icon-dashboard"></span>
+                                </div>
+                                <div class="details px-5">
+                                    <h4>1.423K</h4>
+                                    <p class="text-muted">Products</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 px-5 d-flex">
+                                <div
+                                    class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
+                                    <span class="icon-chart"></span>
+                                </div>
+                                <div class="details px-5">
+                                    <h4>$9475</h4>
+                                    <p class="text-muted">Revenue</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 px-5 d-flex">
+                                <h4>Statistics</h4>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- revenue-card:end -->
+
     </main>
     <!-- Main section ends -->
     </div>
