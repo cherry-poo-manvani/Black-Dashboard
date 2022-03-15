@@ -86,211 +86,209 @@
         <!-- sidebar section ends -->
 
         <!-- Main section starts -->
-        <main class="d-flex flex-column flex-grow-1 p-lg-4 ">
-            <!--search-box -->
+        <main class="d-flex flex-grow-1 p-lg-4 ">
+            <div class="flex-grow-1">
+                <!--search-box -->
                 <div class="form-control w-50">
                     <label for="searchInput" class="icon border-0 "><span class="icon-search"></span></label>
                     <input type="search" class="border-0 p-md-1 text-gray" id="searchInput" placeholder="Search for Stats">
                 </div>
-            <!-- Greeting block -->
-            <div class="d-flex justify-content-between align-content-center pt-5">
-                <div class="d-flex flex-column ">
-                    <h3>Hello Sia</h3>
-                    <span class="text-gray">Welcome back!</span>
+                <!-- Greeting block -->
+                <div class="d-flex justify-content-between align-content-center pt-5">
+                    <div class="d-flex flex-column ">
+                        <h3>Hello Sia</h3>
+                        <span class="text-gray">Welcome back!</span>
+                    </div>
+                    <!-- Filter-Button -->
+                    <div class="d-flex justify-content-end pt-3">
+                        <button type="button" class="btn form-control">Filter <i class="ps-2 icon-filter"></i></button>
+                    </div>
                 </div>
-                <!-- Filter-Button -->
-                <div class="d-flex justify-content-end pt-3">
-                    <button type="button" class="btn form-control">Filter <i class="ps-2 icon-filter"></i></button>
+                <!-- Dashboard view cards section starts-->
+                <div class="pt-4">
+                    <div class="d-flex rounded-card p-2 justify-content-between border-0 view-cards">
+                        <!-- Card one -->
+                        <div class="d-flex flex-column justify-content-center align-content-center p-2">
+                            <div class="rounded-circle card-icon-box-size ">
+                                <span class="card-icon d-flex align-items-center justify-content-center"><i
+                                        class="icon-eye"></i></span>
+                            </div>
+                            <div class="d-flex pt-2 p-2 flex-column align-content-center">
+                                <span class="text-gray">view</span>
+                                <h1 class="text-dark">500</h1>
+                                <span class="text-gray">Per Day</span>
+                            </div>
+                        </div>
+                        <!-- Card two -->
+                        <div class="d-flex flex-column justify-content-center align-content-center p-2">
+                            <div class="rounded-circle card-icon-box-size ">
+                                <span class="card-icon d-flex align-items-center justify-content-center"><i
+                                        class="icon-compass"></i></span>
+                            </div>
+                            <div class="d-flex pt-2 p-2 flex-column align-content-center">
+                                <span class="text-gray">visits</span>
+                                <h1 class="text-dark">2000</h1>
+                                <span class="text-gray">Per Minutes</span>
+                            </div>
+                        </div>
+                        <!-- Card three -->
+                        <div class="d-flex flex-column justify-content-center align-content-center p-2">
+                            <div class="rounded-circle card-icon-box-size ">
+                                <span class="card-icon d-flex align-items-center justify-content-center"><i
+                                        class="icon-house"></i></span>
+                            </div>
+                            <div class="d-flex pt-2 p-2 flex-column align-content-center">
+                                <span class="text-gray">Orders</span>
+                                <h1 class="text-dark">1500</h1>
+                                <span class="text-gray">Per Day</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Dashboard view cards section ends -->
+                <!-- Cards sections starts -->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 my-3">
+                        <div class="card">
+                            <div class="card-body p-4 d-flex justify-content-between card-skin">
+                                <div>
+                                    <h5 class="progress-text">Sales</h5>
+                                    <h6 class="text-muted card-text ">Total Sales today</h6>
+                                    <h3 class="progress-text">$500</h3>
+                                </div>
+                                <div class="pie-65 d-flex justify-content-center align-items-center">
+                                    <div class="inner-circle d-flex justify-content-center align-items-center card-skin">
+                                        <h4>65%</h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="icon-arrow-down"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 my-3">
+                        <div class="card">
+                            <div class="card-body p-4 d-flex justify-content-between card-green">
+                                <div>
+                                    <h5 class="progress-text">Profit</h5>
+                                    <h6 class="text-muted card-text">Per Day Ratio</h6>
+                                    <h3 class="progress-text">$150</h3>
+                                </div>
+                                <div class="pie-40 d-flex justify-content-center align-items-center">
+                                    <div class="inner-circle d-flex justify-content-center align-items-center card-green">
+                                        <h4>40%</h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="icon-arrow-down"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 my-3">
+                        <div class="card">
+                            <div class="card-body p-4 d-flex justify-content-between card-orders">
+                                <div>
+                                    <h5 class="progress-text">Orders</h5>
+                                    <h6 class="text-muted card-text">Total Orders Today</h6>
+                                    <h3 class="progress-text">1000</h3>
+                                </div>
+                                <div class="pie-25 d-flex justify-content-center align-items-center">
+                                    <div class="inner-circle d-flex justify-content-center align-items-center card-orders">
+                                        <h4>25%</h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="icon-danger icon-arrow-up"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12  my-3">
+                        <div class="card">
+                            <div class="card-body p-4 d-flex justify-content-between card-purple">
+                                <div>
+                                    <h5 class="progress-text">Visits</h5>
+                                    <h6 class="text-muted card-text">Total Visits today</h6>
+                                    <h3 class="progress-text">400</h3>
+                                </div>
+                                <div class="pie-87 d-flex justify-content-center align-items-center">
+                                    <div class="inner-circle d-flex justify-content-center align-items-center card-purple">
+                                        <h4>87%</h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="icon-danger icon-arrow-up"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cards sections ends -->
             </div>
-            <!-- Dashboard view cards section starts-->
-            <div class="pt-4">
-                <div class="d-flex rounded-card p-2 justify-content-between border-0 view-cards">
-                    <!-- Card one -->
-                    <div class="d-flex flex-column justify-content-center align-content-center p-2">
-                        <div class="rounded-circle card-icon-box-size ">
-                            <span class="card-icon d-flex align-items-center justify-content-center"><i class="icon-eye"></i></span>
+            <div class="secondary-aside mt-sm-3 mt-md-3">
+                <div class="sales-wrapper p-3">
+                    <h4 class="p-3 d-flex justify-content-center">Sales Revenue</h4>
+                    <!-- revenue-card:start -->
+                    <div class="row revenue-card">
+                        <div class="col-12 px-5 d-flex">
+                            <div class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
+                                <span class="icon-shop-window"></span>
+                            </div>
+                            <div class="details px-5 ">
+                                <h4>230k</h4>
+                                <p class="text-muted">Sales</p>
+                            </div>
                         </div>
-                        <div class="d-flex pt-2 p-2 flex-column align-content-center">
-                            <span class="text-gray">view</span>
-                            <h1 class="text-dark">500</h1>
-                            <span class="text-gray">Per Day</span>
+
+                        <div class="col-12 px-5 d-flex">
+                            <div class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
+                                <span class="icon-customer"></span>
+                            </div>
+                            <div class="details px-5">
+                                <h4>8.549K</h4>
+                                <p class="text-muted">Customers</p>
+                            </div>
                         </div>
+
+                        <div class="col-12 px-5 d-flex">
+                            <div class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
+                                <span class="icon-dashboard"></span>
+                            </div>
+                            <div class="details px-5">
+                                <h4>1.423K</h4>
+                                <p class="text-muted">Products</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 px-5 d-flex">
+                            <div class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
+                                <span class="icon-chart"></span>
+                            </div>
+                            <div class="details px-5">
+                                <h4>$9475</h4>
+                                <p class="text-muted">Revenue</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 px-5 d-flex">
+                            <h4>Statistics</h4>
+                        </div>
+
                     </div>
-                    <!-- Card two -->
-                    <div class="d-flex flex-column justify-content-center align-content-center p-2">
-                        <div class="rounded-circle card-icon-box-size ">
-                            <span class="card-icon d-flex align-items-center justify-content-center"><i class="icon-compass"></i></span>
-                        </div>
-                        <div class="d-flex pt-2 p-2 flex-column align-content-center">
-                            <span class="text-gray">visits</span>
-                            <h1 class="text-dark">2000</h1>
-                            <span class="text-gray">Per Minutes</span>
-                        </div>
-                    </div>
-                    <!-- Card three -->
-                    <div class="d-flex flex-column justify-content-center align-content-center p-2">
-                        <div class="rounded-circle card-icon-box-size ">
-                            <span class="card-icon d-flex align-items-center justify-content-center"><i class="icon-house"></i></span>
-                        </div>
-                        <div class="d-flex pt-2 p-2 flex-column align-content-center">
-                            <span class="text-gray">Orders</span>
-                            <h1 class="text-dark">1500</h1>
-                            <span class="text-gray">Per Day</span>
-                        </div>
-                    </div>
+
                 </div>
+                <!-- <div class="row justify-content-md-center justify-content-lg-end">
+                    <div class="col-lg-12 col-md-8 ps-lg-5 ps-md-0">
+                        
+                    </div>
+                </div> -->
             </div>
-            <!-- Dashboard view cards section ends -->
-            <!-- Cards sections starts -->
-            <div class="row">
-                <div class="col-md-6 col-sm-12 my-3">
-                    <div class="card">
-                        <div class="card-body p-4 d-flex justify-content-between card-skin">
-                            <div>
-                                <h5 class="progress-text">Sales</h5>
-                                <h6 class="text-muted card-text ">Total Sales today</h6>
-                                <h3 class="progress-text">$500</h3>
-                            </div>
-                            <div class="pie-65 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="inner-circle d-flex justify-content-center align-items-center card-skin">
-                                    <h4>65%</h4>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="icon-arrow-down"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 my-3">
-                    <div class="card">
-                        <div class="card-body p-4 d-flex justify-content-between card-green">
-                            <div>
-                                <h5 class="progress-text">Profit</h5>
-                                <h6 class="text-muted card-text">Per Day Ratio</h6>
-                                <h3 class="progress-text">$150</h3>
-                            </div>
-                            <div class="pie-40 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="inner-circle d-flex justify-content-center align-items-center card-green">
-                                    <h4>40%</h4>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="icon-arrow-down"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 my-3">
-                    <div class="card">
-                        <div class="card-body p-4 d-flex justify-content-between card-orders">
-                            <div>
-                                <h5 class="progress-text">Orders</h5>
-                                <h6 class="text-muted card-text">Total Orders Today</h6>
-                                <h3 class="progress-text">1000</h3>
-                            </div>
-                            <div class="pie-25 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="inner-circle d-flex justify-content-center align-items-center card-orders">
-                                    <h4>25%</h4>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="icon-danger icon-arrow-up"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12  my-3">
-                    <div class="card">
-                        <div class="card-body p-4 d-flex justify-content-between card-purple">
-                            <div>
-                                <h5 class="progress-text">Visits</h5>
-                                <h6 class="text-muted card-text">Total Visits today</h6>
-                                <h3 class="progress-text">400</h3>
-                            </div>
-                            <div class="pie-87 d-flex justify-content-center align-items-center">
-                                <div
-                                    class="inner-circle d-flex justify-content-center align-items-center card-purple">
-                                    <h4>87%</h4>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="icon-danger icon-arrow-up"></span>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <!-- Cards sections ends -->
-        <div class="col-lg-4 mt-sm-3 mt-md-3">
-            <div class="row justify-content-md-center justify-content-lg-end">
-                <div class="col-lg-12 col-md-8 ps-lg-5 ps-md-0">
-                    <div class="sales-wrapper p-3">
-                        <h4 class="p-3 d-flex justify-content-center">Sales Revenue</h4>
-                        <!-- revenue-card:start -->
-                        <div class="row revenue-card">
-                            <div class="col-12 px-5 d-flex">
-                                <div
-                                    class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
-                                    <span class="icon-shop-window"></span>
-                                </div>
-                                <div class="details px-5 ">
-                                    <h4>230k</h4>
-                                    <p class="text-muted">Sales</p>
-                                </div>
-                            </div>
+            <!-- revenue-card:end -->
 
-                            <div class="col-12 px-5 d-flex">
-                                <div
-                                    class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
-                                    <span class="icon-customer"></span>
-                                </div>
-                                <div class="details px-5">
-                                    <h4>8.549K</h4>
-                                    <p class="text-muted">Customers</p>
-                                </div>
-                            </div>
-
-                            <div class="col-12 px-5 d-flex">
-                                <div
-                                    class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
-                                    <span class="icon-dashboard"></span>
-                                </div>
-                                <div class="details px-5">
-                                    <h4>1.423K</h4>
-                                    <p class="text-muted">Products</p>
-                                </div>
-                            </div>
-
-                            <div class="col-12 px-5 d-flex">
-                                <div
-                                    class="sales-icon d-flex justify-content-center align-items-center flex-grow-0 flex-shrink-0">
-                                    <span class="icon-chart"></span>
-                                </div>
-                                <div class="details px-5">
-                                    <h4>$9475</h4>
-                                    <p class="text-muted">Revenue</p>
-                                </div>
-                            </div>
-
-                            <div class="col-12 px-5 d-flex">
-                                <h4>Statistics</h4>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-         <!-- revenue-card:end -->
-
-    </main>
-    <!-- Main section ends -->
+        </main>
+        <!-- Main section ends -->
     </div>
 </body>
 

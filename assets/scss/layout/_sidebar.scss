@@ -13,8 +13,12 @@
     border: none;
     background-color: transparent;
     font-size: $list-font-size;
-    &:hover {
+    border-left: 4px solid transparent;
+    transition: 0.4s all;
+    &:hover,
+    &.active {
         border-left: 4px solid $accent;
+        font-weight: 500;
     }
 }
 
@@ -58,7 +62,7 @@ figure {
     }
 }
 
-#aside-checkbox:checked ~ .aside {
+#aside-checkbox:checked~.aside {
     transform: translateX(-250px);
     flex-basis: 0;
     width: 0;
@@ -66,16 +70,20 @@ figure {
     .aside-toggle {
         transform-origin: center;
         transition: all ease-in 0.4s;
-        left:auto;
-        right:-275px;
-        
+        left: auto;
+        right: -275px;
         .icon {
-            display:block;
+            display: block;
         }
     }
 }
 
-.icon{
+.icon {
     font-size: 1.25rem;
-    color: $primary;  
+    color: $primary;
+}
+
+.secondary-aside {
+    flex: 0 0 300px;
+    max-width: 300px;
 }
